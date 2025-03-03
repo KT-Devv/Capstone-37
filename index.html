@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Job Portal</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body class="bg-gray-50 font-sans">
+        <!-- Navigation -->
+        <nav class="flex justify-between items-center px-8 py-4 border-b relative">
+            <!-- Left Links -->
+            <div class="flex space-x-6 text-gray-600">
+                <a href="#" class="font-medium">HOME</a>
+                <a href="#" class="font-medium">FIND JOB</a>
+                <a href="#" class="font-medium">CANDIDATES</a>
+                <a href="#" class="font-medium">EXPLORE</a>
+            </div>
+
+            <!-- Centered About Us -->
+            <a href="#" class="font-medium text-gray-600 absolute left-1/2 transform -translate-x-1/2">ABOUT US</a>
+
+            <!-- Right Links with Dropdown -->
+            <div class="flex items-center space-x-6">
+                <div class="relative group">
+                    <button class="text-gray-600 flex items-center">
+                        🇺🇸 ENGLISH
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="hidden group-hover:block absolute top-full right-0 bg-white shadow-lg rounded mt-1 py-2 w-40">
+                        <a href="#" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100">
+                            🇺🇸 English
+                        </a>
+                        <a href="#" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100">
+                            🇫🇷 Français
+                        </a>
+                        <a href="#" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100">
+                            🇩🇪 Deutsch
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Top Header -->
+        <div class="flex justify-between items-center px-8 py-4 border-b">
+            <a href="index.html">
+                <img src="loogoo 1.png" alt="LOgo" height="120" width="120">
+            </a>
+            
+            <!-- Search Bar -->
+            <div class="flex-1 max-w-xl mx-8">
+                <div class="flex items-center border rounded-lg p-2">
+                    <i class="fa fa-search px-2"></i>
+                    <input type="text" placeholder="Job title, keyword, company" class="flex-1 outline-none">
+                </div>
+            </div>
+
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-gray-600">Sign In</a>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded">Post A Job</button>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="max-w-4xl mx-auto mt-16 px-4">
+            <h1 class="text-5xl font-bold mb-6 text-center">
+                Find a Job that suits<br>
+                your interest & skills.
+            </h1>
+            <p class="text-gray-600 text-center mb-8">
+                we are here to help you secure your dream job, get your cv prepared<br>
+                for the exciting moments and wins ahead.
+            </p>
+
+            <!-- Search Form -->
+            <div class="flex gap-4 mb-12">
+                <div class="flex-1 flex items-center border rounded-lg p-2">
+                    <i class="fa fa-search px-2"></i>
+                    <input type="text" placeholder="Job title, keyword..." class="flex-1 outline-none">
+                </div>
+                <div class="flex-1 flex items-center border rounded-lg p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                    </svg>
+                    <input type="text" placeholder="Your location" class="flex-1 outline-none">
+                </div>
+                <button class="bg-blue-600 text-white px-8 py-3 rounded-lg">Find Job</button>
+            </div>
+
+            <!-- Stats -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 px-4 mb-8">
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-100 hover:border-blue-200 transition-all">
+                    <div class="flex flex-col items-center">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mb-3">
+                            <i class="fas fa-briefcase text-white text-xl"></i>
+                        </div>
+                        <div class="text-2xl font-bold text-blue-600">17,900</div>
+                        <div class="text-gray-600">Live Jobs</div>
+                    </div>
+                </div>
+
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-100 hover:border-blue-200 transition-all">
+                    <div class="flex flex-col items-center">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mb-3">
+                            <i class="fas fa-building text-white text-xl"></i>
+                        </div>
+                        <div class="text-2xl font-bold text-blue-600">9,700</div>
+                        <div class="text-gray-600">Companies</div>
+                    </div>
+                </div>
+
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-100 hover:border-blue-200 transition-all">
+                    <div class="flex flex-col items-center">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mb-3">
+                            <i class="fas fa-users text-white text-xl"></i>
+                        </div>
+                        <div class="text-2xl font-bold text-blue-600">3,500</div>
+                        <div class="text-gray-600">Candidates</div>
+                    </div>
+                </div>
+
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-100 hover:border-blue-200 transition-all">
+                    <div class="flex flex-col items-center">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mb-3">
+                            <i class="fas fa-bolt text-white text-xl"></i>
+                        </div>
+                        <div class="text-2xl font-bold text-blue-600">1,500</div>
+                        <div class="text-gray-600">New Jobs</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Explore Section -->
+        <section class="py-10 px-6">
+            <div class="flex justify-between items-center mb-6">
+            <h2 class="text-2xl font-bold">Explore</h2>
+            <button class="bg-transparent hover:bg-gray-100 text-blue-500 font-semibold py-2 px-4 rounded inline-flex items-center">
+                View all
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                </svg>
+            </button>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <!-- Category Cards -->
+            <div class="flex items-center p-2 rounded-lg shadow-sm">
+                <div class="bg-blue-50 p-2 rounded mr-2">
+                <img src="pen-tool 1.png" alt="Graphic Designs Icon" class="w-8 h-8">
+                </div>
+                <p class="text-sm font-medium">Graphic Designs</p>
+            </div>
+            <div class="flex items-center p-2 rounded-lg shadow-sm">
+                <div class="bg-blue-50 p-2 rounded mr-2">
+                <img src="programming-language 1.png" alt="Code & Programming Icon" class="w-8 h-8">
+                </div>
+                <p class="text-sm font-medium">Code & Programming</p>
+            </div>
+            <div class="flex items-center p-2 rounded-lg shadow-sm">
+                <div class="bg-blue-50 p-2 rounded mr-2">
+                <img src="megaphone 1.png" alt="Digital Marketing Icon" class="w-8 h-8">
+                </div>
+                <p class="text-sm font-medium">Digital Marketing</p>
+            </div>
+            <div class="flex items-center p-2 rounded-lg shadow-sm">
+                <div class="bg-blue-50 p-2 rounded mr-2">
+                <img src="tv-show 1.png" alt="Video & Animation Icon" class="w-8 h-8">
+                </div>
+                <p class="text-sm font-medium">Video & Animation</p>
+            </div>
+            <div class="flex items-center p-2 rounded-lg shadow-sm">
+                <div class="bg-blue-50 p-2 rounded mr-2">
+                <img src="Rectangle 20.png" alt="Music & Audio Icon" class="w-8 h-8">
+                </div>
+                <p class="text-sm font-medium">Music & Audio</p>
+            </div>
+            <div class="flex items-center p-2 rounded-lg shadow-sm">
+                <div class="bg-blue-50 p-2 rounded mr-2">
+                <img src="Rectangle 20.png" alt="Account & Finance Icon" class="w-8 h-8">
+                </div>
+                <p class="text-sm font-medium">Account & Finance</p>
+            </div>
+            <div class="flex items-center p-2 rounded-lg shadow-sm">
+                <div class="bg-blue-50 p-2 rounded mr-2">
+                <img src="Rectangle 20.png" alt="Health & Care Icon" class="w-8 h-8">
+                </div>
+                <p class="text-sm font-medium">Health & Care</p>
+            </div>
+            <div class="flex items-center p-2 rounded-lg shadow-sm">
+                <div class="bg-blue-50 p-2 rounded mr-2">
+                <img src="Rectangle 20.png" alt="Data & Science Icon" class="w-8 h-8">
+                </div>
+                <p class="text-sm font-medium">Data & Science</p>
+            </div>
+            </div>
+        </section>
+        
+        <!-- Find Job Section -->
+        <section class="py-6 px-6 bg-white shadow-md rounded-lg mt-8">
+            <div class="flex justify-between items-center mb-6">
+            <h2 class="text-xl font-bold">Find Job</h2>
+            <button class="bg-transparent hover:bg-gray-100 text-blue-500 font-semibold py-2 px-4 rounded inline-flex items-center">
+            View all
+            </button>
+            </div>
+
+            <!-- Job Listings -->
+            <div class="space-y-4">
+
+            <!-- Job Card 1 -->
+            <div class="flex items-center p-4 rounded-lg shadow-md">
+                <img src="ux-design 1.png" alt="Company Logo" class="w-10 h-10 mr-4">
+                <div class="flex-grow">
+                <h3 class="font-semibold text-md">Senior UI/UX Designer</h3>
+                <div class="flex items-center space-x-2">
+                    <span class="bg-blue-50 text-blue-500 text-xs py-1 px-2 rounded-full">Online Base</span>
+                </div>
+                <div class="text-gray-600 text-sm">
+                    <p class="inline"><img src="placeholder 1.png" alt="Location" class="w-4 h-4 inline mr-1">CANADA</p>
+                    <p class="inline ml-2"><img src="dollar-symbol 1.png" alt="Salary" class="w-4 h-4 inline mr-1">$30k-$35k</p>
+                    <p class="inline ml-2"><img src="calendar 1.png" alt="Time" class="w-4 h-4 inline mr-1">4 Days Remaining</p>
+                </div>
+                </div>
+                <button class="bg-blue-50 text-blue-500 py-2 px-4 rounded-full font-semibold hover:bg-blue-100 flex items-center">
+                Apply Now <img src="right (1) 1.png" alt="Arrow" class="w-4 h-4 ml-2">
+                </button>
+            </div>
+
+            <!-- Job Card 2 -->
+            <div class="flex items-center p-4 rounded-lg shadow-md">
+                <img src="vecteezy_facebook-png-icon_16716481 1.png" alt="Company Logo" class="w-10 h-10 mr-4">
+                <div class="flex-grow">
+                <h3 class="font-semibold text-md">Software Engineer</h3>
+                <div class="flex items-center space-x-2">
+                    <span class="bg-blue-50 text-blue-500 text-xs py-1 px-2 rounded-full">Full Time</span>
+                </div>
+                <div class="text-gray-600 text-sm">
+                    <p class="inline"><img src="placeholder 1.png" alt="Location" class="w-4 h-4 inline mr-1">USA</p>
+                    <p class="inline ml-2"><img src="dollar-symbol 1.png" alt="Salary" class="w-4 h-4 inline mr-1">$30k-$35k</p>
+                    <p class="inline ml-2"><img src="calendar 1.png" alt="Time" class="w-4 h-4 inline mr-1">15 Days Remaining</p>
+                </div>
+                </div>
+                <button class="bg-blue-50 text-blue-500 py-2 px-4 rounded-full font-semibold hover:bg-blue-100 flex items-center">
+                Apply Now <img src="right (1) 1.png" alt="Arrow" class="w-4 h-4 ml-2">
+                </button>
+            </div>
+
+                    <!-- Job Card 3 -->
+                    <div class="flex items-center p-4 rounded-lg shadow-md">
+                <img src="vecteezy_apple-brand-icon-illustration-top-tech-company-logotype_12871451 1.png" alt="Company Logo" class="w-10 h-10 mr-4">
+                <div class="flex-grow">
+                <h3 class="font-semibold text-md">Graphic Designer</h3>
+                <div class="flex items-center space-x-2">
+                    <span class="bg-blue-50 text-blue-500 text-xs py-1 px-2 rounded-full">Part Time</span>
+                </div>
+                <div class="text-gray-600 text-sm">
+                    <p class="inline"><img src="placeholder 1.png" alt="Location" class="w-4 h-4 inline mr-1">GHANA</p>
+                    <p class="inline ml-2"><img src="dollar-symbol 1.png" alt="Salary" class="w-4 h-4 inline mr-1">$45k-$50k</p>
+                    <p class="inline ml-2"><img src="calendar 1.png" alt="Time" class="w-4 h-4 inline mr-1">30 Days Remaining</p>
+                </div>
+                </div>
+                <button class="bg-blue-50 text-blue-500 py-2 px-4 rounded-full font-semibold hover:bg-blue-100 flex items-center">
+                Apply Now <img src="right (1) 1.png" alt="Arrow" class="w-4 h-4 ml-2">
+                </button>
+            </div>
+
+                        <!-- Job Card 4 -->
+                        <div class="flex items-center p-4 rounded-lg shadow-md">
+                <img src="vecteezy_figma-3d-icon_32050116 1.png" alt="Company Logo" class="w-10 h-10 mr-4">
+                <div class="flex-grow">
+                <h3 class="font-semibold text-md">Product Designer</h3>
+                <div class="flex items-center space-x-2">
+                    <span class="bg-blue-50 text-blue-500 text-xs py-1 px-2 rounded-full">Full Time</span>
+                </div>
+                <div class="text-gray-600 text-sm">
+                    <p class="inline"><img src="placeholder 1.png" alt="Location" class="w-4 h-4 inline mr-1">UK</p>
+                    <p class="inline ml-2"><img src="dollar-symbol 1.png" alt="Salary" class="w-4 h-4 inline mr-1">$50k-$60k</p>
+                    <p class="inline ml-2"><img src="calendar 1.png" alt="Time" class="w-4 h-4 inline mr-1">1 Month Remaining</p>
+                </div>
+                </div>
+                <button class="bg-blue-50 text-blue-500 py-2 px-4 rounded-full font-semibold hover:bg-blue-100 flex items-center">
+                Apply Now <img src="right (1) 1.png" alt="Arrow" class="w-4 h-4 ml-2">
+                </button>
+            </div>
+
+                                <!-- Job Card 5 -->
+                                <div class="flex items-center p-4 rounded-lg shadow-md">
+                <img src="vecteezy_google-icon-logo-symbol_22613027 1.png" alt="Company Logo" class="w-10 h-10 mr-4">
+                <div class="flex-grow">
+                <h3 class="font-semibold text-md">Marketing Officer</h3>
+                <div class="flex items-center space-x-2">
+                    <span class="bg-blue-50 text-blue-500 text-xs py-1 px-2 rounded-full">Full Time</span>
+                </div>
+                <div class="text-gray-600 text-sm">
+                    <p class="inline"><img src="placeholder 1.png" alt="Location" class="w-4 h-4 inline mr-1">CANADA</p>
+                    <p class="inline ml-2"><img src="dollar-symbol 1.png" alt="Salary" class="w-4 h-4 inline mr-1">$55k-$60k</p>
+                    <p class="inline ml-2"><img src="calendar 1.png" alt="Time" class="w-4 h-4 inline mr-1">1 Month Remaining</p>
+                </div>
+                </div>
+                <button class="bg-blue-50 text-blue-500 py-2 px-4 rounded-full font-semibold hover:bg-blue-100 flex items-center">
+                Apply Now <img src="right (1) 1.png" alt="Arrow" class="w-4 h-4 ml-2">
+                </button>
+            </div>
+
+                                    <!-- Job Card 6 -->
+                                    <div class="flex items-center p-4 rounded-lg shadow-md">
+                <img src="vecteezy_adobe-photoshop-logo-transparent-background_46437272 1.png" alt="Company Logo" class="w-10 h-10 mr-4">
+                <div class="flex-grow">
+                <h3 class="font-semibold text-md">Relation Officer</h3>
+                <span class="bg-blue-50 text-blue-500 text-xs py-1 px-2 rounded-full">Full Time</span>
+                <div class="flex items-center space-x-2">
+                </div>
+                <div class="text-gray-600 text-sm">
+                    <p class="inline"><img src="placeholder 1.png" alt="Location" class="w-4 h-4 inline mr-1">USA</p>
+                    <p class="inline ml-2"><img src="dollar-symbol 1.png" alt="Salary" class="w-4 h-4 inline mr-1">$55k-$60k</p>
+                    <p class="inline ml-2"><img src="calendar 1.png" alt="Time" class="w-4 h-4 inline mr-1">1 Month Remaining</p>
+                </div>
+                </div>
+                <button class="bg-blue-50 text-blue-500 py-2 px-4 rounded-full font-semibold hover:bg-blue-100 flex items-center">
+                Apply Now <img src="right (1) 1.png" alt="Arrow" class="w-4 h-4 ml-2">
+                </button>
+            </div>
+
+            </div>
+        </section>
+
+        
+    </body>
+</html>
